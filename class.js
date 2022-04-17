@@ -27,3 +27,30 @@ class SkinnedMesh extends THREE.Mesh {
   }
 }
 
+super -> palabra reservada
+
+ej: 
+class Auto {
+    constructor (color,motor){
+        this.color = color;
+        this.motor = motor;
+    }
+    arranca(){
+        // el auto arranca a funcionar
+    }
+    apagar(){
+        //el auto se apaga
+    }
+}
+
+class Tesla extends Auto{ 
+constructor(color, motor,year){
+    super();//Estoy invocando el constructor auto
+    this.year = year;
+}
+}
+
+let Tesla = new Tesla('Rojo','V8',2021);
+
+extends -> se usa para crear una clase hija de otra,
+La palabra clave extends se puede usar para crear una subclase a partir de clases personalizadas, así como sus objetos incorporados.
