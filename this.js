@@ -112,4 +112,17 @@ function Personal(nombre){
 
 const juan = new Persona ('Juan');
 
-Es instanciar un nuevo objeto con la palabra new
+Es instanciar un nuevo objeto con la palabra new, luego ese objeto se guarda en la variable juan, tbn estamos produciendo un enlazamiento
+
+1.- Lexical binding -> Se produce cuando escribimos una función como arrow function, se ejecutan en el mismo contexto en las que fueron creadas
+no se le puede cambiar el contexto
+
+ej: function siguemeEnTwitter(){
+        console.log('sigueme en twitter ${this.twitter}!');
+    }
+
+    la función arrow de la funcion anterior es:
+
+    const siguemeEnTwitter = () => {
+        console.log('sigueme en twitter ${this.twitter}!');
+    }
