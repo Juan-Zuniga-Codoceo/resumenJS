@@ -36,10 +36,10 @@ class Auto {
         this.motor = motor;
     }
     arranca(){
-        // el auto arranca a funcionar
+      console.log('arranco');  // el auto arranca a funcionar
     }
     apagar(){
-        //el auto se apaga
+       console.log('apago') //el auto se apaga
     }
 }
 
@@ -50,7 +50,27 @@ constructor(color, motor,year){
 }
 }
 
+
+class Ferrari extends Auto{
+    constructor(color,motor,chasis){
+        super(color, motor); // Super se pone porque voy extendiendo de Auto, primero se genera Auto y despues Ferrari
+        this.chasis = chasis;
+    }
+}
+
+
 let Tesla = new Tesla('Rojo','V8',2021);
+console.log(Tesla);
+Tesla.arranca();
+Tesla.apagar();
+El Tesla heredo toda las funcionalidades de Auto por lo tanto puedo usar los metodos de Auto
+
+let Ferrari = new Ferrari('Azul','V6',2562462120);
+console.log(Ferrari); 
+Ferrari no tendra la información de Year ya que no extiende de Tesla sino de Auto y esa información no esta en Auto
 
 extends -> se usa para crear una clase hija de otra,
 La palabra clave extends se puede usar para crear una subclase a partir de clases personalizadas, así como sus objetos incorporados.
+
+
+Más info: [MDN Classes](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
