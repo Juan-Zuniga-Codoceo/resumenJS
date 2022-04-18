@@ -21,6 +21,8 @@ AJAX se basa en un montón de tecnologías. No tienes que ser un experto en toda
 HTTP Methods
 
 - Get: El servidor debe buscar información en la base de datos.
-- Put: El servidor va a modificar algo en la base de datos.
+- Put: El servidor va a modificar información en la base de datos.
 - Delete: El servidor va a ir a la base de datos y va a eliminar algo.
 - Post: El servidor va agregar información en la base de datos.
+
+Jquery.ajax para buscar el script para usar ajax en mi web
