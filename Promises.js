@@ -1,4 +1,4 @@
-Promises
+/*Promises
 
 Promises es una librería para mejorar la programación asíncrónica. Las Promises son una representación de tipo first-class de un valor que va a estar disponible en el futuro. Esto también ya existia con otras librerías de terceros.
 
